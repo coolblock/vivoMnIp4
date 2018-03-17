@@ -1,4 +1,6 @@
 #install proper conf file on root 
+cd
+screen -v > /root/scrt.txt
 mkdir /var/log/sentinel
 git clone https://github.com/coolblock/vpsVIVO.git
 cd vpsVIVO/

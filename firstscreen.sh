@@ -1,5 +1,5 @@
 apt-get install -y screen
-cp * /root/*
+cp * /root/
 cd
 chmod +x *.sh
 chmod -x *.conf
