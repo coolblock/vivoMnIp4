@@ -1,6 +1,7 @@
 apt-get install -y screen
-git clone https://github.com/coolblock/vpsVIVO.git && cd vpsVIVO
 cp * /root/*
 cd
+chmod +x *.sh
+chmod -x *.conf
 screen -S tf2 /root/firstInstallStep.sh
 
