@@ -23,7 +23,9 @@ sudo apt-get update
 sudo apt-get install -y git python-virtualenv
 mkdir sentineldir
 cd sentineldir
-git clone https://github.com/coolblock/vivo_sentinel.git && cd sentinel
+git clone https://github.com/coolblock/vivo_sentinel.git
+mv ./vivo_sentinel ./sentinel
+cd sentinel
 sudo apt-get install -y virtualenv
 virtualenv venv
 venv/bin/pip install -r requirements.txt
