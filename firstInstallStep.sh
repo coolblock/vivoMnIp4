@@ -4,7 +4,7 @@ screen -v > /root/scrt.txt
 mkdir /var/log/sentinel
 git clone https://github.com/coolblock/vpsVIVO.git
 cd vpsVIVO/
-#git checkout v1.0 
+git checkout v1.0 
 awk '{gsub("https://github.com/dashpay/sentinel.git", "https://github.com/vivocoin/sentinel.git", $0); print}' install.sh > outputx
 mv install.sh install.bak
 mv outputx install.sh
