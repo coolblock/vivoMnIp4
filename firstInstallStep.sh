@@ -11,7 +11,7 @@ awk '{gsub("https://github.com/dashpay/sentinel.git", "https://github.com/vivoco
 mv install.sh install.bak
 mv outputx install.sh
 chmod +x install.sh
-./install.sh -p vivo -n 4 
+./install.sh -p vivo -n 4 -s
 rm -f /etc/masternodes/vivo_n1.conf
 /usr/local/bin/activate_masternodes_vivo
 #cp /root/ /etc/masternodes/vivo_n1.conf
