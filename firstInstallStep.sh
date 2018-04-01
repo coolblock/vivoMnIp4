@@ -3,8 +3,6 @@
 #trap read debug
 cd
 screen -v > /root/scrt.txt
-cat finaltemplate.conf > finalVivo.conf
-cat finalPrivateKey1.txt >> finalVivo.conf
 mkdir /var/log/sentinel
 git clone https://github.com/coolblock/vpsVIVO.git
 cd vpsVIVO/
