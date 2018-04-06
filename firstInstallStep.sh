@@ -7,9 +7,9 @@ mkdir /var/log/sentinel
 git clone https://github.com/coolblock/vpsVIVO.git
 cd vpsVIVO/
 #git checkout v1.0 
-awk '{gsub("https://github.com/dashpay/sentinel.git", "https://github.com/vivocoin/sentinel.git", $0); print}' install.sh > outputx
-mv install.sh install.bak
-mv outputx install.sh
+#---awk '{gsub("https://github.com/dashpay/sentinel.git", "https://github.com/vivocoin/sentinel.git", $0); print}' install.sh > outputx
+#---mv install.sh install.bak
+#---mv outputx install.sh
 chmod +x install.sh
 ./install.sh -p vivo -n 4 -s
 #---rm -f /etc/masternodes/vivo_n1.conf
