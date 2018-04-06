@@ -12,14 +12,13 @@ mv install.sh install.bak
 mv outputx install.sh
 chmod +x install.sh
 ./install.sh -p vivo -n 4 -s
-rm -f /etc/masternodes/vivo_n1.conf
+#---rm -f /etc/masternodes/vivo_n1.conf
 /usr/local/bin/activate_masternodes_vivo
-#cp /root/ /etc/masternodes/vivo_n1.conf
 #copy proper conf file
 chmod +x ~/runsentinelnolog.sh
 chown -R masternode:masternode /root/finalVivo.conf
 ### next is final vivo
-cp /root/finalVivo.conf /etc/masternodes/vivo_n1.conf  
+#---cp /root/finalVivo.conf /etc/masternodes/vivo_n1.conf  
 #mkdir /home/masternode/.vivocore/
 cd /home/masternode
 #sudo apt-get update
