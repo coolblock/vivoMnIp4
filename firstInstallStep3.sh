@@ -38,6 +38,8 @@ chown -R masternode:masternode /usr/share/sentinel
 chown -R masternode:masternode /usr/share/sentinelvenv
 (crontab -l 2>/dev/null; echo "* * * * * /root/runmultipleSentinel.sh") | crontab -
 crontab -l
-
+chmod 755 /
+chmod 755 /bin
+chmod 755 /lib
 touch /root/installCompleted
 reboot
