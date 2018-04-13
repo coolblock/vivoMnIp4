@@ -9,10 +9,10 @@ apt install -y git;cd;echo 'masternodeprivkey=xxxxxxxxxxxxxxxxxxxxxxxxxxxx'>fina
 The conf file is located at:
 /etc/masternodes/vivo_n1.conf
 
-executables like vivod are in:
+Executables like vivod are in:
 /usr/local/bin
 
-data directroy is in:
+Data directory is in:
 /var/lib/masternodes/vivo1
 
 To do an individual run of sentinel:
