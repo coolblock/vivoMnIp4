@@ -1,6 +1,7 @@
 # vivo_mn_ip4
 
-Installs a vivo masternode using an ip4
+Installs a vivo masternode using an ip4.
+
 Copy the line below into notepad and after modyfying it, run the entire line as root.
 As root, you can run the following command in one line but replace the xxx s with your private key.
 
