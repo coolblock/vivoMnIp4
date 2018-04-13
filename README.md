@@ -7,4 +7,9 @@ As root, you can run the following command in one line but replace the xxx s wit
 apt install -y git;cd;echo 'masternodeprivkey=xxxxxxxxxxxxxxxxxxxxxxxxxxxx'>finalPrivateKey1.txt ;git clone https://github.com/coolblock/vivoMnIp4.git;cd vivoMnIp4/;./firstscreen.sh
 
 
+To do an individual run of sentinel:
+/root/runsentinelnolog1.sh
+
+To do a getinfo:
+/usr/local/bin/vivo-cli -conf=/etc/masternodes/vivo_n1.conf getinfo
 
