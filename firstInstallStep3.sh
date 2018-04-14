@@ -38,6 +38,10 @@ chown -R masternode:masternode /usr/share/sentinel
 chown -R masternode:masternode /usr/share/sentinelvenv
 (crontab -l 2>/dev/null; echo "* * * * * /root/runmultipleSentinel.sh") | crontab -
 crontab -l
+apt -y install fail2ban
+systemctl enable fail2ban
+systemctl start fail2ban
+sudo apt -y install rkhunter
 chmod 755 /
 chmod 755 /bin
 chmod 755 /lib
