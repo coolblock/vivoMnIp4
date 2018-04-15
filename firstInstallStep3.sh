@@ -36,8 +36,9 @@ cd /home/masternode
 chown -R masternode:masternode /home/masternode/
 chown -R masternode:masternode /usr/share/sentinel
 chown -R masternode:masternode /usr/share/sentinelvenv
-(crontab -l 2>/dev/null; echo "* * * * * /root/runmultipleSentinel.sh") | crontab -
-crontab -l
+if ! crontab -l | grep "/root/runmultipleSentinel.sh"; then
+	(crontab -l 2>/dev/null; echo "* * * * * /root/runmultipleSentinel.sh") | crontab -
+fi
 apt -y install fail2ban
 systemctl enable fail2ban
 systemctl start fail2ban
