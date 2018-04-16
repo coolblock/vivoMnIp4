@@ -2,7 +2,6 @@
 #set -x
 #trap read debug
 cd
-screen -S TINST
 mkdir /var/log/sentinel
 git clone https://github.com/coolblock/vpsVIVO.git
 cd vpsVIVO/
