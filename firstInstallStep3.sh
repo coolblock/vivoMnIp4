@@ -2,7 +2,7 @@
 #set -x
 #trap read debug
 cd
-screen -v > /root/scrt.txt
+screen -v -L > /root/scrt.txt
 mkdir /var/log/sentinel
 git clone https://github.com/coolblock/vpsVIVO.git
 cd vpsVIVO/
