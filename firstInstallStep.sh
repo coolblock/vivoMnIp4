@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
-set -x
-trap read debug
+##!/usr/bin/env bash
+#set -x
+#trap read debug
 cd
 screen -v > /root/scrt.txt
 mkdir /var/log/sentinel
