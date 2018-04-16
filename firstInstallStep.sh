@@ -1,6 +1,6 @@
-##!/usr/bin/env bash
-#set -x
-#trap read debug
+#!/usr/bin/env bash
+set -x
+trap read debug
 cd
 screen -v > /root/scrt.txt
 mkdir /var/log/sentinel
@@ -11,13 +11,15 @@ awk '{gsub("https://github.com/dashpay/sentinel.git", "https://github.com/vivoco
 mv install.sh install.bak
 mv outputx install.sh
 chmod +x install.sh
-if [ $# -ne 0 ]; then
-	if [ firstArgument -eq 'cb' ]; then
+args=("$@")
+echo Number of arguments: $#
+echo 1st argument: ${args[0]}
+echo 2nd argument: ${args[1]}
+	if [ "${args[0]}" == "cb" ]; then
 		sed -i 's!//github.com/vivocoin/vivo.git!//github.com/coolblock/vivo.git!' /root/vpsVIVO/config/vivo/vivo.env
 		sed -i 's!SCVERSION="v0.12.1.7"!SCVERSION="master"!' /root/vpsVIVO/config/vivo/vivo.env
 	
 	fi
-fi
 ./install.sh -p vivo -n 4 -s
 /usr/local/bin/activate_masternodes_vivo
 chmod +x ~/runsentinelnolog.sh
