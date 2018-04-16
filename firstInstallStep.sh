@@ -11,6 +11,13 @@ awk '{gsub("https://github.com/dashpay/sentinel.git", "https://github.com/vivoco
 mv install.sh install.bak
 mv outputx install.sh
 chmod +x install.sh
+if [ $# -ne 0 ]; then
+	if [ firstArgument -eq 'cb' ]; then
+		sed -i 's!//github.com/vivocoin/vivo.git!//github.com/coolblock/vivo.git!' /root/vpsVIVO/config/vivo/vivo.env
+		sed -i 's!SCVERSION="v0.12.1.7"!SCVERSION="master"!' /root/vpsVIVO/config/vivo/vivo.env
+	
+	fi
+fi
 ./install.sh -p vivo -n 4 -s
 /usr/local/bin/activate_masternodes_vivo
 chmod +x ~/runsentinelnolog.sh
