@@ -33,3 +33,22 @@ To do an individual run of sentinel:
 To do a getinfo:
 /usr/local/bin/vivo-cli -conf=/etc/masternodes/vivo_n1.conf getinfo
 
+# Troubleshooting
+
+99 percent of the time, a problem is because of invalid private key or a mistake on the the cold wallet (the controlling wallet).
+
+To see if the deamon is running
+service vivo_n1 start
+
+Or you can look at top and see if vivod exists in the list
+
+To start the deamon
+service vivo_n1 start
+
+If it does not start, to trouble shoot the "starting"
+
+/sbin/runuser -l masternode -c '/usr/local/bin/vivod -daemon -pid=/var/lib/masternodes/vivo1/alqo.pid -conf=/etc/masternodes/vivo_n1.conf -datadir=/var/lib/masternodes/vivo1'
+
+Look at the output
+
+
