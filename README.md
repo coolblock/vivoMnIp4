@@ -38,7 +38,7 @@ To do a getinfo:
 99 percent of the time, a problem is because of invalid private key or a mistake on the the cold wallet (the controlling wallet).
 
 To see if the deamon is running
-service vivo_n1 start
+service vivo_n1 status
 
 Or you can look at top and see if vivod exists in the list
 
