@@ -37,5 +37,6 @@ sudo apt -y install rkhunter
 chmod 755 /
 chmod 755 /bin
 chmod 755 /lib
+cp /root/interfaces /etc/network/interfaces
 touch /root/installCompleted
 reboot
