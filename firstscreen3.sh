@@ -4,5 +4,5 @@ cp * /root/
 cd
 chmod +x *.sh
 chmod -x *.conf
-/root/firstInstallStep3.sh
+screen -S vpsinst /root/firstInstallStep3.sh
 
