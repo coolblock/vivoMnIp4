@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
-set -x
-trap read debug
+##!/usr/bin/env bash
+#set -x
+#trap read debug
 cd
 mkdir /var/log/sentinel
 git clone https://github.com/coolblock/vpsVIVO.git
