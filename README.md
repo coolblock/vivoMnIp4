@@ -58,3 +58,9 @@ control x to save
 and then type in
 reboot
 That will restart everything.
+
+TO REINDEX:
+(one single line below)
+
+service vivo_n1 stop;/sbin/runuser -l masternode -c '/usr/local/bin/vivod -reindex -pid=/var/lib/masternodes/vivo1/vivo.pid -conf=/etc/masternodes/vivo_n1.conf -datadir=/var/lib/masternodes/vivo1'
+
