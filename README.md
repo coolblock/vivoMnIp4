@@ -1,11 +1,16 @@
 # vivo_mn_ip4
 
+Newest Technique:
+First time installation as root on ubuntu 16 or above.
+
+All in one line BUT replace the XXXXX with your private key
+
+cd;apt install -y git screen;echo 'masternodeprivkey=xxxxxxxxxxxxxxxxxxxxxxxxxxxx'>pk_vivo_1.txt;git clone https://github.com/coolblock/vpsVIVO.git;screen -dmS new_screen bash;screen -S new_screen -p 0 -X exec /root/vpsVIVO/coinMnInstall.sh vivo 1
+
 Installs a vivo masternode using an ip4. It will build the masternode from source. It will run as a service and will be restarted if the vps is restarted.
 
 Copy the line below into notepad and after modyfying it, run the entire line as root.
 As root, you can run the following command in one line but replace the xxx s with your private key.
-
-apt install -y git;cd;echo 'masternodeprivkey=xxxxxxxxxxxxxxxxxxxxxxxxxxxx'>finalPrivateKey1.txt ;git clone https://github.com/coolblock/vivoMnIp4.git;cd vivoMnIp4/;./firstscreen.sh
 
 The vps script will run for 15 minutes and disconnect your ssh session. Putty will show a disconnect error. That means the machine is rebooting. You can restart another session if you want to check the vps.
 
