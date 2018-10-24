@@ -1,4 +1,4 @@
-# vivo_mn_ip4
+# vivo_mn_ip4  (Unsupported, use vpsVivo instead)
 
 Newest Technique:
 First time installation as root on ubuntu 16 or above.
